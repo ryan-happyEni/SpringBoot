@@ -1,0 +1,68 @@
+body {
+	padding-top: 70px;
+}
+
+.container {
+    max-width: 95% !important;
+}
+
+.bg-purple{
+    background-color: #6f42c1;
+}
+
+.bg-green{
+    background-color: #28A75D;
+}
+
+.table .thead-inverse{
+	background-color: #6c757d;
+	color: #fff;
+}
+
+.table td {
+  word-break: break-all;
+}
+
+.table a {
+	color: #ffc107 !important;
+}
+
+.pagingWrap{
+	margin-top:20px;
+}
+
+.pagingPrev, .pagingNext, .pagingNumber{
+	float:left;
+}
+
+.pagingNumber{
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.pagingNumber a{
+	margin-left:10px;
+	margin-right:10px;
+	color: #212529;
+}
+
+.pagingNumber .active{
+	color: red;
+}
+
+.table .on{
+	background-color: #ffce00;
+}
+
+#table1 .card-deck .card{
+	padding-left:0;
+	padding-right:0;
+}
+
+
+#table1 .card-deck{
+	padding-bottom:32px;
+}
+
+.apiiput{
+}
