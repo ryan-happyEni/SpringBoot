@@ -46,10 +46,7 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-redis')
 	implementation('org.springframework.boot:spring-boot-starter-freemarker')
 	implementation('org.springframework.boot:spring-boot-starter-security')
-	implementation('org.springframework.boot:spring-boot-starter-web') {
-	    exclude module: 'slf4j-log4j12'
-	    exclude module: 'logback-classic'
-	}
+	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('org.springframework.boot:spring-boot-starter-websocket')
 	implementation('com.fasterxml.jackson.core:jackson-databind')
 	implementation('org.apache.logging.log4j:log4j-core:2.11.1')
@@ -61,12 +58,6 @@ dependencies {
 	compileOnly('org.projectlombok:lombok:1.18.4')
 	runtimeOnly('mysql:mysql-connector-java')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
-	testImplementation('org.springframework.boot:spring-boot-starter-test'){
-	    exclude module: 'slf4j-log4j12'
-	    exclude module: 'logback-classic'
-	}
-	testImplementation('org.springframework.security:spring-security-test'){
-	    exclude module: 'slf4j-log4j12'
-	    exclude module: 'logback-classic'
-	}
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	testImplementation('org.springframework.security:spring-security-test')
 }
