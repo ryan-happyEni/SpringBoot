@@ -10,7 +10,8 @@ buildscript {
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath("io.franzbecker:gradle-lombok:1.8")
+		classpath("io.franzbecker:gradle-lombok:1.8")		
+    		classpath("net.ltgt.gradle:gradle-apt-plugin")
 	}
 }
 
