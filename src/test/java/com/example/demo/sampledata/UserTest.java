@@ -12,6 +12,7 @@ import com.example.demo.web.service.UserService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = InheeApplication.class)
+@ActiveProfiles("local")
 public class UserTest {
     
     @Autowired
