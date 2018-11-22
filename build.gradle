@@ -36,6 +36,7 @@ repositories {
 
 configurations {
 	providedRuntime
+	compile.exclude(group: 'ch.qos.logback')
 }
 
 dependencies {
