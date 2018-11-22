@@ -14,6 +14,10 @@ buildscript {
 	}
 }
 
+plugins {
+	id 'net.ltgt.apt' version '0.10'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'org.springframework.boot'
@@ -55,6 +59,7 @@ dependencies {
 	compile('org.apache.tika:tika-parsers:1.19')
 	compile('it.ozimov:embedded-redis:0.7.2')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	apt('org.projectlombok:lombok:1.18.4')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.security:spring-security-test')
 }
