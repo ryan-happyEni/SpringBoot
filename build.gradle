@@ -46,7 +46,10 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-redis')
 	implementation('org.springframework.boot:spring-boot-starter-freemarker')
 	implementation('org.springframework.boot:spring-boot-starter-security')
-	implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('org.springframework.boot:spring-boot-starter-web') {
+	    exclude module: 'log4j-slf4j-impl'
+	    exclude module: 'logback-classic'
+	}
 	implementation('org.springframework.boot:spring-boot-starter-websocket')
 	implementation('com.fasterxml.jackson.core:jackson-databind')
 	implementation('org.apache.logging.log4j:log4j-core:2.11.1')
