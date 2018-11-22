@@ -47,7 +47,7 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-freemarker')
 	implementation('org.springframework.boot:spring-boot-starter-security')
 	implementation('org.springframework.boot:spring-boot-starter-web') {
-	    exclude module: 'log4j-slf4j-impl'
+	    exclude module: 'slf4j-log4j12'
 	    exclude module: 'logback-classic'
 	}
 	implementation('org.springframework.boot:spring-boot-starter-websocket')
@@ -62,11 +62,11 @@ dependencies {
 	runtimeOnly('mysql:mysql-connector-java')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testImplementation('org.springframework.boot:spring-boot-starter-test'){
-	    exclude module: 'log4j-slf4j-impl'
+	    exclude module: 'slf4j-log4j12'
 	    exclude module: 'logback-classic'
 	}
 	testImplementation('org.springframework.security:spring-security-test'){
-	    exclude module: 'log4j-slf4j-impl'
+	    exclude module: 'slf4j-log4j12'
 	    exclude module: 'logback-classic'
 	}
 }
