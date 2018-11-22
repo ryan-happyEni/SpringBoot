@@ -58,6 +58,12 @@ dependencies {
 	compileOnly('org.projectlombok:lombok:1.18.4')
 	runtimeOnly('mysql:mysql-connector-java')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
-	testImplementation('org.springframework.security:spring-security-test')
+	testImplementation('org.springframework.boot:spring-boot-starter-test'){
+	    exclude module: 'log4j-slf4j-impl'
+	    exclude module: 'logback-classic'
+	}
+	testImplementation('org.springframework.security:spring-security-test'){
+	    exclude module: 'log4j-slf4j-impl'
+	    exclude module: 'logback-classic'
+	}
 }
