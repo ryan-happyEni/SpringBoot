@@ -36,6 +36,8 @@ repositories {
 
 configurations {
 	providedRuntime	
+	runtime.exclude group: "org.slf4j", module: "slf4j-log4j12"
+	compile.exclude group: "org.slf4j", module: "slf4j-log4j12"
 }
 
 dependencies {
